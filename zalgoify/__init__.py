@@ -8,7 +8,7 @@ def zalgoify(text, zalgos):
     retstr = ""
     for char in text:
         retchar = char
-        for _ in range(5):
+        for _ in range(zalgos):
             retchar += chr(random.choice(characters))
         retstr += retchar
     return retstr
